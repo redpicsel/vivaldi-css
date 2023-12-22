@@ -105,3 +105,41 @@ div.tab span.jstest-favicon-image > img[src*="/resources/default_favicon"] {
 	background: none;
 	/*background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsSAAALEgHS3X78AAABhklEQVQ4y6WTv1LbQBDGf6uThBWrYtLQu0hpEBUzdpcGPQAlBSUFVKkoXXhcm84vYD8ARVIyk4oZ0sEbWAWTJkqQkU9LoViO/+Axk6+63dv79ru7b0VVeTw8bAr0gJZCjQ0QyIBbhS+f7u5+yEMUNQW+G5GgbgyGzbDAs7Xkqs8KR65AzxMJdj2PbRE4Dk95HljVngO0AlP29dpt3IODtYecvT28druK6+WZlqNQM4CEIR+urgj7/bUktbMz6t0uOycnABhAoebMCvw4RsKwlHh5uULwb/cFZbPFZDikSJKSvdHAj+OFwiJJKJKEyXC4SiAiAPzpdOYPdXFRyfXjGNNoLOxX3/oQRbrruvhOKSa8vsbd318pnN7fk56fV/FLUfBzOp1fYYZ1XTblVwiK8ZjJaLSQm4xGFOPxdgQA2WCApikAmqZkg8GbpnIFMrvkf01Tfp2e4h8f83JzU5EtW1ogk8co+mpEPn98h5UBnvIcq/qtGiZPJAi2HKbf1mL/DpP87zi/AgellFNpktoPAAAAAElFTkSuQmCC") center no-repeat !important;*/
 }
+
+
+/*------------------------------------------------------------------------------*/
+/* Autohide panel switch for Vivaldi 6.0 */
+
+/* Remove panel padding and background */
+#panels-container.overlay.minimized {
+    position: absolute;
+    background-color: unset;
+}
+/* Set the width of the panels-container element when not hovering over it to adjust the activation zone and not cause it to completely disappear when closing, different widths for different window modes, and keep it fully extended while editing toolbars */
+#browser:not(.toolbar-edit-mode).maximized #panels-container.overlay:not(:hover) {
+    width: 1px !important;
+	transition: .1s .9s, background-color 0s 0s, opacity 0s 1s !important;
+}
+
+#browser:not(.toolbar-edit-mode).fullscreen #panels-container.overlay:not(:hover) {
+    width: 1px !important;
+	transition: .1s .9s, background-color 0s 0s, opacity 0s 1s !important;
+}
+
+#browser:not(.toolbar-edit-mode).normal #panels-container.overlay:not(:hover) {
+    width: 6px !important;
+	transition: .1s .9s, background-color 0s 0s, opacity 0s 1s !important;
+}
+
+/* Expand the switch element by one pixel to remove gap */
+#switch {
+    flex: 0 0 35px;
+    max-width: 35px;
+}
+
+/* Set background color for panel switch */
+#panels-container.overlay #switch, #panels-container:not(.overlay).icons #switch {
+    background-color: var(--colorBgAlphaBlur);
+}
+/*------------------------------------------------------------------------------*/
+
