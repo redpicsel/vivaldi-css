@@ -86,3 +86,15 @@
 #panels-container {
 	background-color: #202127 !important;
 }
+
+#browser.color-behind-tabs-on .tab-position .tab.active.active {
+	background-color: #30343d !important;
+}
+
+.left .toolbar.toolbar-vertical {
+	border-right: 1px solid #30343d !important;
+}
+
+.left.icons .toolbar.toolbar-vertical {
+	border-right: none !important;
+}
