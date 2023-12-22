@@ -1,0 +1,51 @@
+.transparent-tabbar .tab-position .tab.active .tab-header .favicon:not(.svg),
+.theme-dark .tab-position .tab.active .tab-header .favicon:not(.svg),
+.acc-dark.color-behind-tabs-off .tab-position .tab.active .tab-header .favicon:not(.svg) {
+  filter: none !important;
+}
+
+
+.tab {
+	border-radius: 10px !important;
+	margin-right: 5px !important;
+}
+
+.tabs-top .tab.active:not(.marked):not(.tab-mini):not(.tab-in-accordion):after, 
+.tabs-top .tab.active:not(.marked):not(.tab-mini):not(.tab-in-accordion):before {
+	visibility: hidden !important;
+}
+
+
+#tabs-tabbar-container {
+	padding-bottom: 3px !important;
+	padding-top: 4px !important;
+}
+
+.vivaldi {
+	margin-top: 4px !important;
+}
+
+.maximized#browser.win .window-buttongroup {
+	margin-top: 3px !important;
+}
+
+#browser .tab-position .tab.inactive {
+	background-color: pink !important;
+}
+
+.mainbar > .toolbar-mainbar {
+	height: 40px !important
+}
+
+.UrlBar-SearchField, .UrlBar-AddressField {
+	height: 35px !important;
+	padding: 0 5px !important;
+}
+
+.OmniLinkItem {
+	--item-height: 35px !important;
+}
+
+.toolbar-insideinput.toolbar-insideinput.toolbar-insideinput, .SiteInfoButton {
+	margin-top: 2px !important;
+}
