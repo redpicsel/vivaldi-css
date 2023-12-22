@@ -88,7 +88,7 @@
 }
 
 #browser.color-behind-tabs-on .tab-position .tab.active.active {
-	background-color: #30343d !important;
+	background-color: #444957 !important;
 }
 
 .left .toolbar.toolbar-vertical {
@@ -97,4 +97,11 @@
 
 .left.icons .toolbar.toolbar-vertical {
 	border-right: none !important;
+}
+
+div.tab span.jstest-favicon-image > img[src*="/resources/default_favicon"] {
+	padding-left: 16px !important;
+	width: 0 !important;
+	background: none;
+	/*background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsSAAALEgHS3X78AAABhklEQVQ4y6WTv1LbQBDGf6uThBWrYtLQu0hpEBUzdpcGPQAlBSUFVKkoXXhcm84vYD8ARVIyk4oZ0sEbWAWTJkqQkU9LoViO/+Axk6+63dv79ru7b0VVeTw8bAr0gJZCjQ0QyIBbhS+f7u5+yEMUNQW+G5GgbgyGzbDAs7Xkqs8KR65AzxMJdj2PbRE4Dk95HljVngO0AlP29dpt3IODtYecvT28druK6+WZlqNQM4CEIR+urgj7/bUktbMz6t0uOycnABhAoebMCvw4RsKwlHh5uULwb/cFZbPFZDikSJKSvdHAj+OFwiJJKJKEyXC4SiAiAPzpdOYPdXFRyfXjGNNoLOxX3/oQRbrruvhOKSa8vsbd318pnN7fk56fV/FLUfBzOp1fYYZ1XTblVwiK8ZjJaLSQm4xGFOPxdgQA2WCApikAmqZkg8GbpnIFMrvkf01Tfp2e4h8f83JzU5EtW1ogk8co+mpEPn98h5UBnvIcq/qtGiZPJAi2HKbf1mL/DpP87zi/AgellFNpktoPAAAAAElFTkSuQmCC") center no-repeat !important;*/
 }

@@ -1,0 +1,1 @@
+﻿document.getElementsByClassName("vivaldi")[0].title = "Lực Nguyễn";
