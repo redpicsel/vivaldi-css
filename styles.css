@@ -146,3 +146,8 @@ div.tab span.jstest-favicon-image > img[src*="/resources/default_favicon"] {
 	opacity: 0.2;
 }
 /*------------------------------------------------------------------------------*/
+
+
+#panels-container.left:not(.icons) .panel-group {
+	border-right: 0px solid rgba(0, 0, 0, 0.5) !important;
+}
