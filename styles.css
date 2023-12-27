@@ -165,3 +165,19 @@ webview {
 	padding: 5px;
 	border-radius: 5px;
 }
+
+/* Find in page no animation */
+.fip-active-hit {
+	display: none;
+}
+
+
+/*Custom for localhost tab*/
+/*.localhost .tab {
+	border-left: 10px solid var(--colorHighlightBg);
+}*/
+
+.port-title {
+	margin-left: 4px;
+	margin-right: 4px;
+}
