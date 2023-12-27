@@ -25,7 +25,7 @@ window.onload = function (event) {
 					if (currentUrl.includes("localhost") || currentUrl.includes("127.0.0.1")) {
 						setTimeout(function () {
 							localhost();
-						}, 2000);
+						}, 200);
 
 						return;
 					}
@@ -36,7 +36,7 @@ window.onload = function (event) {
 					if (port != "") {
 						setTimeout(function () {
 							showPort();
-						}, 2000);
+						}, 200);
 
 						return;
 					}
