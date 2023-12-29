@@ -29,7 +29,7 @@ window.onload = function (event) {
 
 						return;
 					}
-						
+
 
 
 					var port = getPort(currentUrl);
@@ -40,7 +40,7 @@ window.onload = function (event) {
 
 						return;
 					}
-						
+
 
 				}, 100)
 			};
@@ -56,7 +56,7 @@ showPort = function () {
 		var tabActive = document.querySelectorAll("#tabs-container .tab.active")[0];
 		var title = tabActive.title;
 
-		tabActive.title = port + " ● " + title;
+		//tabActive.title = port + " ● " + title;
 		tabActive.getElementsByClassName("title")[0].innerHTML = port + "<span class='port-title'>-</span>" + title;
 	}
 }
@@ -69,7 +69,7 @@ localhost = function () {
 
 		var title = tabActive.title;
 
-		tabActive.title = "Local ● " + title;
+		//tabActive.title = "Local ● " + title;
 		tabActive.getElementsByClassName("title")[0].innerHTML = "local" + "<span class='port-title'>-</span>" + title;
 	}
 }
@@ -82,10 +82,10 @@ function getPort(url) {
 
 	if (parts[0] === 'http' && (isNaN(port) || parts.length < 3))
 		return "";
-	
+
 	if (parts[0] === 'https' && (isNaN(port) || parts.length < 3))
 		return "";
-	
+
 	if (parts.length === 1 || isNaN(port))
 		return "";
 
