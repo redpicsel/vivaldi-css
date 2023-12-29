@@ -14,7 +14,6 @@ window.onload = function (event) {
 			document.getElementById("urlFieldInput").onchange = function () {
 				setTimeout(function () {
 					var currentUrl = document.getElementById("urlFieldInput").value;
-					var isWaiting = currentUrl.includes("cloud-hrm.com:8015");
 
 					if (currentUrl.includes("StartPageChrome2")) {
 						clearSearchInput();
@@ -37,7 +36,7 @@ window.onload = function (event) {
 					if (port != "") {
 						setTimeout(function () {
 							showPort();
-						}, isWaiting ? 2000 : 200);
+						}, 200);
 
 						return;
 					}
