@@ -1,47 +1,51 @@
-﻿window.onload = function (event) {
-	setTimeout(function () {
-		if (document.getElementsByClassName("vivaldi") && document.getElementsByClassName("vivaldi").length > 0)
-			document.getElementsByClassName("vivaldi")[0].title = "Lực Nguyễn";
+﻿//window.onload = function (event) {
+setTimeout(function () {
+	if (document.getElementsByClassName("vivaldi") && document.getElementsByClassName("vivaldi").length > 0)
+		document.getElementsByClassName("vivaldi")[0].title = "Lực Nguyễn";
 
-		clearSearchInput();
+	clearSearchInput();
 
-		if (document.getElementById("urlFieldInput")) {
-			document.getElementById("urlFieldInput").onchange = function () {
+	if (document.getElementById("urlFieldInput")) {
+		document.getElementById("urlFieldInput").onchange = function () {
+			setTimeout(function () {
+				var currentUrl = document.getElementById("urlFieldInput").value;
+
+				if (currentUrl.includes("StartPageChrome2")) {
+					clearSearchInput();
+
+					return;
+				}
+
+
+				if (currentUrl.includes("localhost") || currentUrl.includes("127.0.0.1")) {
+					setTimeout(function () {
+						localhost();
+					}, 200);
+
+					return;
+				}
+
+
 				setTimeout(function () {
-					var currentUrl = document.getElementById("urlFieldInput").value;
-
-					if (currentUrl.includes("StartPageChrome2")) {
-						clearSearchInput();
-
-						return;
-					}
+					showPort();
+				}, 200);
 
 
-					if (currentUrl.includes("localhost") || currentUrl.includes("127.0.0.1")) {
-						setTimeout(function () {
-							localhost();
-						}, 200);
+				//var port = getPort(currentUrl);
+				//if (port != "") {
+				//	setTimeout(function () {
+				//		showPort();
+				//	}, 200);
 
-						return;
-					}
-
-
-
-					var port = getPort(currentUrl);
-					if (port != "") {
-						setTimeout(function () {
-							showPort();
-						}, 200);
-
-						return;
-					}
+				//	return;
+				//}
 
 
-				}, 500)
-			};
-		}
-	}, 2000)
-};
+			}, 500)
+		};
+	}
+}, 2000)
+//};
 
 showPort = function () {
 	var currentUrl = document.getElementById("urlFieldInput").value;
@@ -51,8 +55,10 @@ showPort = function () {
 		var tabActive = document.querySelectorAll("#tabs-container .tab.active")[0];
 		var title = tabActive.title;
 
+		var portHTML = port == "" ? "" : port + "<span class='port-title'>-</span>";
+
 		//tabActive.title = port + " ● " + title;
-		tabActive.getElementsByClassName("title")[0].innerHTML = port + "<span class='port-title'>-</span>" + title;
+		tabActive.getElementsByClassName("title")[0].innerHTML = portHTML + title;
 	}
 }
 
