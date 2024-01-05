@@ -1,9 +1,4 @@
-﻿
-
-//body tag in window.html
-//<script src="custom.js"></script>
-
-window.onload = function (event) {
+﻿window.onload = function (event) {
 	setTimeout(function () {
 		if (document.getElementsByClassName("vivaldi") && document.getElementsByClassName("vivaldi").length > 0)
 			document.getElementsByClassName("vivaldi")[0].title = "Lực Nguyễn";
@@ -42,10 +37,10 @@ window.onload = function (event) {
 					}
 
 
-				}, 100)
+				}, 500)
 			};
 		}
-	}, 1000)
+	}, 2000)
 };
 
 showPort = function () {
