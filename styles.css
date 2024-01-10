@@ -80,7 +80,9 @@
 }
 
 #tabs-container {
-	padding-left: 38px !important;
+	/*padding-left: 38px !important;*/
+	padding-left: 100px !important;
+	padding-right: calc(140px / var(--uiZoomLevel) + 135px) !important; 
 }
 
 #panels-container {
@@ -205,4 +207,28 @@ webview {
 
 .dialog-tab div {
 	top: 1.8% !important;
+}
+
+:not(.tabs-bottom)#browser > footer {
+	position: absolute !important;
+	top: 5px !important;
+	left: 35px !important;
+	background: transparent !important;
+}
+
+.toolbar .page-zoom-controls {
+	position: absolute;
+	right: calc(-100vw + 230px);
+}
+
+.toolbar .page-zoom-controls input {
+	width: 40px !important;
+	height: 3px !important;
+}
+
+.toolbar .page-zoom-controls input[type="range"]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	width: 9px;
+	height: 9px;
+	border-radius: 50%;
 }
