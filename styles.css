@@ -235,4 +235,8 @@ webview {
 	border-radius: 50%;
 }
 
+:not(.tabs-bottom)#browser > footer:after {
+	background-color: transparent !important;
+}
+
 /*------------------------------------------------------------------------------------------------------*/
