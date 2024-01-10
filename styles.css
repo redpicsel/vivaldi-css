@@ -82,7 +82,7 @@
 #tabs-container {
 	/*padding-left: 38px !important;*/
 	padding-left: 100px !important;
-	padding-right: calc(140px / var(--uiZoomLevel) + 90px) !important; 
+	padding-right: calc(140px / var(--uiZoomLevel) + 35px) !important; 
 }
 
 #panels-container {
@@ -225,7 +225,12 @@ webview {
 
 .toolbar .page-zoom-controls input {
 	width: 40px !important;
+	display: none;
 	/*height: 3px !important;*/
+}
+
+.toolbar .page-zoom-controls span {
+	font-size: 10px !important;
 }
 
 .toolbar .page-zoom-controls input[type="range"]::-webkit-slider-thumb {
