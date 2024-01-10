@@ -209,6 +209,8 @@ webview {
 	top: 1.8% !important;
 }
 
+
+/*----Custom toolbar positon in tabbar -----------------------------------------------------------*/
 :not(.tabs-bottom)#browser > footer {
 	position: absolute !important;
 	top: 5px !important;
@@ -232,3 +234,5 @@ webview {
 	height: 9px;
 	border-radius: 50%;
 }
+
+/*------------------------------------------------------------------------------------------------------*/
