@@ -82,7 +82,7 @@
 #tabs-container {
 	/*padding-left: 38px !important;*/
 	padding-left: 100px !important;
-	padding-right: calc(140px / var(--uiZoomLevel) + 135px) !important; 
+	padding-right: calc(140px / var(--uiZoomLevel) + 90px) !important; 
 }
 
 #panels-container {
@@ -225,18 +225,22 @@ webview {
 
 .toolbar .page-zoom-controls input {
 	width: 40px !important;
-	height: 3px !important;
+	/*height: 3px !important;*/
 }
 
 .toolbar .page-zoom-controls input[type="range"]::-webkit-slider-thumb {
 	-webkit-appearance: none;
-	width: 9px;
-	height: 9px;
+	width: 10px;
+	height: 10px;
 	border-radius: 50%;
 }
 
 :not(.tabs-bottom)#browser > footer:after {
 	background-color: transparent !important;
+}
+
+.toolbar .page-zoom-controls .button-toolbar {
+	display: none !important;
 }
 
 /*------------------------------------------------------------------------------------------------------*/
