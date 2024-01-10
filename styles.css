@@ -181,3 +181,28 @@ webview {
 	margin-left: 4px;
 	margin-right: 4px;
 }
+
+.dialog-tab button svg {
+	width: 26px;
+	height: 26px;
+	cursor: pointer;
+	margin-top: 7px !important;
+}
+
+.dialog-tab button:nth-child(3) svg {
+	width: 14px;
+	height: 14px;
+}
+
+.dialog-tab button:nth-child(4) svg {
+	width: 16px;
+	height: 16px;
+}
+
+.dialog-tab input {
+	height: 35px;
+}
+
+.dialog-tab div {
+	top: 1.8% !important;
+}
