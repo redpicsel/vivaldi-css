@@ -82,7 +82,7 @@
 #tabs-container {
 	/*padding-left: 38px !important;*/
 	padding-left: 100px !important;
-	padding-right: calc(140px / var(--uiZoomLevel) + 35px) !important; 
+	padding-right: calc(140px / var(--uiZoomLevel) + 60px) !important; 
 }
 
 #panels-container {
@@ -248,4 +248,30 @@ webview {
 	display: none !important;
 }
 
+.toolbar .ToolbarButton-Button[name="DownloadButton"] {
+	position: absolute;
+	right: calc(-100vw + 270px);
+}
+
+.download-popout .download-editor {
+	display: none !important;
+}
+
+.download-popout {
+	height: 300px !important;
+}
+
+.button-popup-pos-above:before {
+	display: none !important;
+}
+
+.download-popout .panel > header h1 {
+	margin-top: -12px !important;
+}
+
+.download-popout .panel > header h1 span {
+	display: none !important;
+}
+
+/**/
 /*------------------------------------------------------------------------------------------------------*/
