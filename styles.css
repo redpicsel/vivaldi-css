@@ -273,5 +273,13 @@ webview {
 	display: none !important;
 }
 
+.toolbar .progress {
+	position: absolute !important;
+	width: 100px !important;
+	top: 10px !important;
+	left: calc(100vw - 294px) !important;
+	border-radius: 10px !important;
+}
+
 /**/
 /*------------------------------------------------------------------------------------------------------*/
