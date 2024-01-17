@@ -101,7 +101,7 @@ clearSearchInput = function () {
 		document.getElementById("urlFieldInput").value = "";
 
 		setTimeout(function () {
-			document.getElementById("urlFieldInput").focus();
+			//document.getElementById("urlFieldInput").focus();
 		}, 100);
 	}
 }
