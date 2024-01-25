@@ -8,71 +8,71 @@ setTimeout(function () {
     openLinkDialog();
 
 
-    // if (document.getElementById("urlFieldInput")) {
-    // 	document.getElementById("urlFieldInput").onchange = function () {
-    // 		setTimeout(function () {
-    // 			var currentUrl = document.getElementById("urlFieldInput").value;
-
-    // 			if (currentUrl.includes("StartPageChrome2")) {
-    // 				clearSearchInput();
-
-    // 				return;
-    // 			}
-
-
-    // 			if (currentUrl.includes("localhost") || currentUrl.includes("127.0.0.1")) {
-    // 				setTimeout(function () {
-    // 					localhost();
-    // 				}, 200);
-
-    // 				return;
-    // 			}
-
-
-    // 			setTimeout(function () {
-    // 				showPort();
-    // 			}, 200);
-
-
-    // 			//var port = getPort(currentUrl);
-    // 			//if (port != "") {
-    // 			//	setTimeout(function () {
-    // 			//		showPort();
-    // 			//	}, 200);
-
-    // 			//	return;
-    // 			//}
-
-
-    // 		}, 500)
-    // 	};
-    // }
-
-
-
     if (document.getElementById("urlFieldInput")) {
-        setInterval(function () {
-            var currentUrl = document.getElementById("urlFieldInput").value;
+        document.getElementById("urlFieldInput").onchange = function () {
+            setTimeout(function () {
+                var currentUrl = document.getElementById("urlFieldInput").value;
 
-            if (currentUrl.includes("StartPageChrome2")) {
-                clearSearchInput();
+                if (currentUrl.includes("StartPageChrome2")) {
+                    clearSearchInput();
 
-                return;
-            }
+                    return;
+                }
 
-            if (currentUrl.includes("localhost") || currentUrl.includes("127.0.0.1")) {
+
+                if (currentUrl.includes("localhost") || currentUrl.includes("127.0.0.1")) {
+                    setTimeout(function () {
+                        localhost();
+                    }, 200);
+
+                    return;
+                }
+
+
                 setTimeout(function () {
-                    localhost();
+                    showPort();
                 }, 200);
 
-                return;
-            }
 
-            setTimeout(function () {
-                showPort();
-            }, 200);
-        }, 2000)
+                //var port = getPort(currentUrl);
+                //if (port != "") {
+                //	setTimeout(function () {
+                //		showPort();
+                //	}, 200);
+
+                //	return;
+                //}
+
+
+            }, 500)
+        };
     }
+
+
+
+    // if (document.getElementById("urlFieldInput")) {
+    //     setInterval(function () {
+    //         var currentUrl = document.getElementById("urlFieldInput").value;
+
+    //         if (currentUrl.includes("StartPageChrome2")) {
+    //             clearSearchInput();
+
+    //             return;
+    //         }
+
+    //         if (currentUrl.includes("localhost") || currentUrl.includes("127.0.0.1")) {
+    //             setTimeout(function () {
+    //                 localhost();
+    //             }, 200);
+
+    //             return;
+    //         }
+
+    //         setTimeout(function () {
+    //             showPort();
+    //         }, 200);
+    //     }, 2000)
+    // }
 
 
 
