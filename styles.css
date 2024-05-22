@@ -87,7 +87,7 @@
 #tabs-container {
 	/*padding-left: 38px !important;*/
 	padding-left: 100px !important;
-	padding-right: calc(140px / var(--uiZoomLevel) + 60px) !important; 
+	padding-right: calc(140px / var(--uiZoomLevel) + 90px) !important; 
 }
 
 #panels-container {
@@ -283,6 +283,31 @@ webview {
 	top: 10px !important;
 	left: calc(100vw - 294px) !important;
 	border-radius: 10px !important;
+}
+
+.toolbar .toolbar-extensions {
+	position: absolute;
+	right: calc(-100vw + 307px);
+}
+
+.extension-popup {
+	top: 80px !important;
+}
+
+.toolbar .toolbar-extensions .ExtensionIcon--Hidden {
+	/*background-color: unset !important;*/
+	top: 40px !important;
+	margin-left: 3px;
+	margin-right: 3px;
+	border-radius: 8px;
+	background-color: #28293194 !important;
+	backdrop-filter: blur(10px) !important;
+	right: -35px !important;
+}
+
+.extension-popup:before, .extension-popup:after {
+	border: unset !important;
+	display: none !important;
 }
 
 /**/
