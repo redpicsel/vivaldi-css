@@ -1,57 +1,60 @@
 ﻿//window.onload = function (event) {
 
 
-//const micaBackgroundImage = 'url("chrome://vivaldi-data/desktop-image/0")';
+//----Mica Effect-----------------------------------------------------------------------------------------------------------------------------------------------------
+const micaBackgroundImage = 'url("chrome://vivaldi-data/desktop-image/0")';
 
-//const micaBackground = document.createElement('div');
+const micaBackground = document.createElement('div');
 
-//const micaFilter = document.createElement('div');
+const micaFilter = document.createElement('div');
 
-//let micaX = 0, micaY = 0;
+let micaX = 0, micaY = 0;
 
-//const micaFilterStyle = `position: fixed; top: 0; left: 0; background-color: rgba(255, 255, 255, 0.8); width: 100vw; height: 100vh; z-index: -10;`;
+const micaFilterStyle = `position: fixed; top: 0; left: 0; background-color: rgba(40, 36, 36, 0.8); width: 100vw; height: 100vh; z-index: -10;`;
 
-//const micaBackgroundStyle = `position: fixed; background-image: ${micaBackgroundImage}; background-size: cover; translate: 0 -34px; width: ${window.screen.width + 'px'}; height: ${window.screen.height + 34 + 'px'}; filter: blur(10px) saturate(2.5); z-index: -11;`;
+const micaBackgroundStyle = `position: fixed; background-image: ${micaBackgroundImage}; background-size: cover; translate: 0 -34px; width: ${window.screen.width + 'px'}; height: ${window.screen.height + 34 + 'px'}; filter: blur(100px) saturate(2.5); z-index: -11;`;
 
-//micaBackground.setAttribute('style', micaBackgroundStyle);
+micaBackground.setAttribute('style', micaBackgroundStyle);
 
-//micaFilter.setAttribute('style', micaFilterStyle);
+micaFilter.setAttribute('style', micaFilterStyle);
 
-//micaBackground.setAttribute('id', 'mica-background');
+micaBackground.setAttribute('id', 'mica-background');
 
-//micaFilter.setAttribute('id', 'mica-filter');
+micaFilter.setAttribute('id', 'mica-filter');
 
-//const appendMicaEffect = () => {
+const appendMicaEffect = () => {
 
-//    document.body.appendChild(micaBackground);
+    document.body.appendChild(micaBackground);
 
-//    document.body.appendChild(micaFilter);
+    document.body.appendChild(micaFilter);
 
-//};
+};
 
-//setTimeout(appendMicaEffect, 5);
+setTimeout(appendMicaEffect, 5);
 
-//let micaRefresh = () => {
+let micaRefresh = () => {
 
-//    micaX = window.screenX * -1;
+    micaX = window.screenX * -1;
 
-//    micaY = window.screenY * -1;
+    micaY = window.screenY * -1;
 
-//    micaBackground.style.top = micaY + 'px';
+    micaBackground.style.top = micaY + 'px';
 
-//    micaBackground.style.left = micaX + 'px';
+    micaBackground.style.left = micaX + 'px';
 
-//};
+};
 
-//setInterval(micaRefresh, 10);
+setInterval(micaRefresh, 10);
 
-//const documentHead = document.getElementsByTagName('head')[0];
+const documentHead = document.getElementsByTagName('head')[0];
 
-//const customCSSForMica = document.createElement('style');
+const customCSSForMica = document.createElement('style');
 
-//customCSSForMica.innerHTML = '#browser {background: none !important;} html:has(#browser.theme-dark) #mica-filter {background-color: rgba(0, 0, 0, 0.8) !important;} html:has(#browser.theme-dark) #mica-background {filter: blur(10px) saturate(1.5) !important;}';
+customCSSForMica.innerHTML = '#browser {background: none !important;} html:has(#browser.theme-dark) #mica-filter {background-color: rgba(40, 36, 36, 0.8) !important;} html:has(#browser.theme-dark) #mica-background {filter: blur(100px) saturate(1.5) !important;}';
 
-//documentHead.appendChild(customCSSForMica);
+documentHead.appendChild(customCSSForMica);
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 
 setTimeout(function () {
