@@ -3,7 +3,7 @@
 REM make current directory work when run as administrator
 cd "%~dp0"
 
-set installPath="C:\Users\DeathNotes\AppData\Local\Vivaldi\Application\"
+set installPath="C:\Users\Pixels\AppData\Local\Vivaldi\Application\"
 echo Searching at: %installPath%
 for /f "tokens=*" %%a in ('dir /a:-d /b /s %installPath%') do (
 	if "%%~nxa"=="window.html" set latestVersionFolder=%%~dpa
